@@ -22,9 +22,9 @@ services:
       - 3000:3000
 
     environment:
-      - KOMODO_URL=https://komodo.example.com:9120
-      - KOMODO_USERNAME=username
-      - KOMODO_PASSWORD=password
+      - KOMODO_URL=http://192.168.69.110:9120
+      - KOMODO_USERNAME=danmin  
+      - KOMODO_PASSWORD=894869
 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/ready"]
